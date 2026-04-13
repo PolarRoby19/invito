@@ -73,3 +73,8 @@ document.getElementById('close-video').addEventListener('click', () => {
 vOverlay.addEventListener('click', (e) => {
     if (e.target === vOverlay) document.getElementById('close-video').click();
 });
+
+document.getElementById('joinButton-btn').addEventListener('click', () => {
+    const whatsappLink = "https://whatsapp.com/channel/0029VbCopu8A89Mq8rhlZz3u";
+    window.open(whatsappLink, '_blank');
+})

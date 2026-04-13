@@ -80,13 +80,14 @@ body, html {
 .number-18 { font-size: 4rem; font-weight: 900; color: #00d2ff; }
 .name { font-size: 2.2rem; color: #003d5b; font-family: 'Montserrat'; }
 
-.map-link, .video-link {
+.map-link, .video-link , .group-link{
     display: block; width: 100%; padding: 15px; border-radius: 50px;
     text-decoration: none; font-weight: 800; font-family: 'Poppins';
     transition: 0.3s; border: none; cursor: pointer; text-align: center;
 }
 .map-link { background: #0288d1; color: white; margin-bottom: 8px; }
 .video-link { background: #ff4081; color: white; }
+.group-link { background: #02d182; color: white; margin-bottom: 8px; }
 
 .video-modal {
     position: fixed; inset: 0; background: rgba(0,0,0,0.95);
