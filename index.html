@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>18 Anni Roberto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <div id="intro-screen">
+        <h1 class="intro-title">ROBERTO 18</h1>
+    </div>
+
+    <div id="welcome-screen" class="hidden-fade">
+        <div class="welcome-container">
+            <div class="click-arrows">
+                <i class="fas fa-chevron-down arrow-1"></i>
+                <i class="fas fa-chevron-down arrow-2"></i>
+                <i class="fas fa-chevron-down arrow-3"></i>
+            </div>
+            <button id="open-btn">SCOPRI L'INVITO ✨</button>
+        </div>
+    </div>
+
+    <div id="main-stage" class="hidden">
+        <div id="envelope">
+            <div class="flap"></div>
+            <div class="pocket"></div>
+        </div>
+
+        <div id="invitation-card">
+            <div class="card-content">
+                <p class="top-msg">Sei stato invitato!</p>
+                <span class="number-18">18</span>
+                <h1 class="name">ROBERTO</h1>
+                <p class="desc">Ti aspetto per festeggiare insieme questo traguardo speciale!</p>
+                
+                <div class="details">
+                    <p><strong>QUANDO:</strong> 19 Aprile 2026, 20:00</p>
+                    <p><strong>DOVE:</strong> Via Provinciale per Riposto, 57a, Santa Tecla CT</p>
+                </div>
+
+                <div id="timer-box">
+                    <p id="timer">--g --o --m --s</p>
+                </div>
+
+                <a href="https://maps.app.goo.gl/n1yjwF59dbXsNgHE8" target="_blank" class="map-link">
+                    VEDI MAPPA
+                </a>
+                
+                <button id="view-video-btn" class="video-link">GUARDA IL VIDEO 🎬</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-overlay" class="video-modal">
+        <div class="modal-content">
+            <span id="close-video">×</span>
+            <video id="invitation-video" controls playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Il tuo browser non supporta il video.
+            </video>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop src="musica.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
